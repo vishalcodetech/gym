@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <style>
+    .footer-col{
+        width: 20%;
+        padding: 0 15px;
+    
+       }
+       .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 40px;
+       }
+       .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+       }
+       .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+       }
+       .footer-col ul li a{
+        margin-left: 0px;
+       }
+       .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+       }
+       .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 10px;
+       }
+       .footer-col .social-links a{
+        display: inline-block;
+        height: 50px;
+        width: 50%;
+        background-color: rgba(255,255,255,0.2);
+        list-style: none;
+        margin-left: 20px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.3s ease;
+       }
+       .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+       }
+       
+        
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="left">
+            <p>Fit Hit Gym</p>
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="{% url 'Classes'%}">CLASSES</a></li>
+                        <li><a href="{% url 'contact'%}">CONTACT US</a></li>
+                        <li><a href="/about">ABOUT US</a></li>
+                        <li><a href="/account">ACCOUNT</a></li>
+                        <li><a href="/login">LOGIN</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <p>About Us</p>
+        <img src="{% static 'images/gym13.jpg' %}">
+    </div>
+    <div class="container5">
+        <p>Our Experts</p>
+    </div>
+    <div class="container2">
+        <div class="bordeer-box">
+        <div class="row">
+            
+        <img src="{% static 'images/gym8.jpg' %}">
+        <div class="down">
+            <h2>Mr. Hardeep Singh</h2>
+            <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p>
+        </div>
+</div>
+        <div class="row">
+            <img src="{% static 'images\gym expert1.jpg '%}">
+            <div class="down">
+            <h2>Ms.Eisha</h2>
+            <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p>
+            
+        </div>
+        </div>
+        
+    </div>
+    <div class="container2">
+        <div class="row">
+            
+            <img src="{% static 'images/gym expert2.jpeg' %}">
+           
+            <div class="down">
+                <h2>Mr. Satpal Singh</h2>
+                <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p>
+            </div>
+           
+        </div>
+        <div class="row">
+            <img src="{% static 'images/gym expert 4.jpg' %}">
+            <div class="down">
+                <h2>Mr. Sourab</h2>
+                <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p>
+            </div>
+            
+           
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row5">
+                <div class="footer-col">
+                    <h4>Fit Hit Gym</h4>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="{% url 'Classes' %}">CLASSES</a></li>
+                        <li><a href="/about">ABOUT US</a></li>
+                        <li><a href="/contact">CONTACT US</a></li>
+                        <li><a href="/login">LOGIN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CLASSES</h4>
+                    <ul>
+                        <li><a href="/photo">Basic Fitness</a></li>
+                        <li><a href="#muscleid">Muscle Training</a></li>
+                        <li><a href="/photo">Yoga Training</a></li>
+                        <li><a href="/photo">Body Building</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a><i class="fa fa-phone" aria-hidden="true"></i><p>94780 20036</p></a></li>
+                        <li><a><i class="fa fa-envelope" aria-hidden="true"></i><p>jyoti20015027@gamil.com</p></a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                    </div>
+                  
+                </div>
+               
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

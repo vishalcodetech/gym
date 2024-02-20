@@ -1,0 +1,319 @@
+{% load static %} 
+<!Doctype html> 
+<html> 
+    <head> 
+         
+        <script src="https://kit.fontawesome.com/ccdbd762c2.js" crossorigin="anonymous"></script> 
+        <style> 
+            body{ 
+                background-color: grey; 
+            } 
+            header{ 
+                display: flex; 
+                position: relative; 
+                background-color: rgb(77, 67, 74); 
+                width: 100%; 
+ 
+            } 
+            .left p{ 
+                margin-top: 20px; 
+                margin-left: 100px; 
+                font-size: 30px; 
+                font-weight: bold; 
+                color: aliceblue; 
+            } 
+            .navbar nav ul{ 
+                display: flex; 
+                margin-left: 400px; 
+                margin-top: 40px; 
+                list-style: none; 
+            } 
+           
+            .navbar nav ul li a{ 
+                list-style-type: none; 
+                margin-left: 40px; 
+                font-size: 18px; 
+                font-weight: bold; 
+                color: aliceblue; 
+                margin-top: 20px ; 
+                list-style-type: none; 
+                 
+            } 
+            .navbar nav ul li a{ 
+                text-decoration: none; 
+            } 
+            .navbar nav ul li a:hover{ 
+                font-size: 22px; 
+                color: rgb(233, 91, 233); 
+                text-decoration: underline; 
+                 
+            } 
+           
+            .container img{ 
+                width: 100%; 
+                height: 70vh; 
+ 
+            } 
+            .container p{ 
+                position: absolute; 
+                font-size: 100px; 
+                color: red; 
+                margin-top: 150px; 
+                margin-left: 500px; 
+                font-weight: bold; 
+            } 
+            .container5 p{ 
+                font-weight: bold; 
+                font-size: 50px; 
+                text-align: center; 
+                margin-top: 20px; 
+                text-decoration: underline; 
+            } 
+            .container2{ 
+                background-color: grey; 
+            } 
+            .row{ 
+                display: inline-block; 
+            } 
+            .row img{ 
+                width: 500px; 
+                height: 300px; 
+                margin-top: 50px; 
+                margin-left: 150px; 
+            } 
+            .row p{ 
+                margin-top: 200px; 
+            } 
+             h2{ 
+                margin-left: 150px; 
+            } 
+            .border-box{ 
+            width: 700px; 
+                height: 600px; 
+                box-sizing: border-box; 
+                box-shadow: 0 0 20px 0 #999; 
+                background-color: rgb(234, 141, 245); 
+                /* top: 50%; 
+                left: 50%; */ 
+                transform: translate(-50%,-50%); 
+                position: relative; 
+            } 
+            .down{ 
+                width: 650px; 
+                text-align: justify; 
+            } 
+            .down p{ 
+                margin-top: 0px; 
+                margin-left: 150px; 
+                font-size: 20px; 
+            } 
+            .footer{ 
+                background-color: #24262b; 
+                padding: 70px 0px; 
+                border-radius:  30px 30px 0 0; 
+                margin-top: 20px; 
+            } 
+            .container1{ 
+                max-width: 1170px; 
+                 
+                margin: none; 
+                margin-left: 150px; 
+            } 
+            ul{ 
+                list-style: none; 
+            } 
+            .row5{ 
+                display: flex; 
+                flex-wrap: wrap; 
+            } 
+           .footer-col{ 
+            width: 20%; 
+            padding: 0 15px; 
+         
+           } 
+           .footer-col h4{ 
+            font-size: 18px; 
+            color: #ffffff; 
+            text-transform: capitalize; 
+            margin-bottom: 35px; 
+            font-weight: 500; 
+            position: relative; 
+            margin-left: 40px; 
+           }
+           .footer-col h4::before{ 
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            bottom: -10px; 
+            background-color: #e91e63; 
+            height: 2px; 
+            box-sizing: border-box; 
+            width: 50px; 
+           } 
+           .footer-col ul li:not(:last-child){ 
+            margin-bottom: 10px; 
+           } 
+           .footer-col ul li a{ 
+            margin-left: 0px; 
+           } 
+           .footer-col ul li a{ 
+            font-size: 16px; 
+            text-transform: capitalize; 
+            color: #ffffff; 
+            text-decoration: none; 
+            font-weight: 300; 
+            color: #bbbbbbbb; 
+            display: block; 
+            transition: all 0.3s ease; 
+           } 
+           .footer-col ul li a:hover{ 
+            color: #ffffff; 
+            padding-left: 10px; 
+           } 
+           .footer-col .social-links a{ 
+            display: inline-block; 
+            height: 40px; 
+            width: 40px; 
+            background-color: rgba(255,255,255,0.2); 
+            list-style: none; 
+            margin-left: 20px; 
+            text-align: center; 
+            line-height: 40px; 
+            border-radius: 50%; 
+            color: #ffffff; 
+            transition: all 0.3s ease; 
+           } 
+           .footer-col .social-links a:hover{ 
+            color: #24262b; 
+            background-color: #ffffff; 
+           } 
+            
+             
+ 
+        </style> 
+ 
+    </head> 
+    <body> 
+        <header> 
+            <div class="left"> 
+                <p>FIT HIT GYM</p> 
+            </div> 
+            <div class="right"> 
+                <div class="navbar"> 
+                    <nav> 
+                        <ul> 
+                            <li><a href="/">HOME</a></li> 
+                            <li><a href="/classes">CLASSES</a></li> 
+                            <li><a href="/about">ABOUT US</a></li> 
+                            <li><a href="/contact">CONTACT US</a></li> 
+                            <li><a href="/account">ACCOUNT</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                             
+                        </ul> 
+                    </nav> 
+                </div> 
+            </div> 
+        </header> 
+        <div class="container"> 
+            <p>About Us</p> 
+            <img src="{% static 'images/gym4.jpg' %}"> 
+        </div> 
+        <div class="container5"> 
+            <p>Our Experts</p> 
+        </div> 
+        <div class="container2"> 
+            <div class="bordeer-box"> 
+            <div class="row"> 
+                 
+            <img src="{% static 'images/gym8.jpg' %}"> 
+            <div class="down"> 
+                <h2>Mr. Hardeep Singh</h2> 
+                <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p> 
+            </div> 
+             
+             
+ 
+            </div> 
+            <div class="row"> 
+                <img src="{% static 'images/gym expert.jpg' %}"> 
+                <div class="down"> 
+                <h2>Ms.Eisha</h2> 
+                <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p> 
+                 
+            </div> 
+            </div> 
+             
+        </div> 
+        <div class="container2"> 
+            <div class="row"> 
+                 
+                <img src="{% static 'images/gym expert 4.jpg' %}"> 
+                
+                <div class="down"> 
+                    <h2>Mr. Sehaj Singh</h2> 
+                    <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and
+                        stretching. They work with people of all ages and skill levels.</p> 
+                    </div> 
+                    
+                </div> 
+                <div class="row"> 
+                    <img src="{% static 'images/gym expert1.jpg' %}"> 
+                    <div class="down"> 
+                        <h2>Mr. Sourab</h2> 
+                        <p>Fitness trainers and instructors lead, instruct, and motivate individuals or groups in exercise activities,including cardiovascular workouts (for the heart and blood circulation),strength training, and stretching. They work with people of all ages and skill levels.</p> 
+                    </div> 
+                     
+                    
+                </div> 
+                 
+            </div> 
+            <footer class="footer"> 
+                <div class="container1"> 
+                    <div class="row5"> 
+                        <div class="footer-col"> 
+                            <h4>Fit Hit Gym</h4> 
+                            <ul> 
+                                <li><a href="/">HOME</a></li> 
+                                <li><a href="/classes">CLASSES</a></li> 
+                                <li><a href="/about">ABOUT US</a></li> 
+                                <li><a href="/contact">CONTACT US</a></li> 
+                                <li><a href="/account">ACCOUNT</a></li> 
+                                <li><a href="/login">LOGIN</a></li>
+                            </ul> 
+                        </div> 
+                        <div class="footer-col"> 
+                            <h4>CLASSES</h4> 
+                            <ul> 
+                                <li><a href="/photo">Basic Fitness</a></li> 
+                                <li><a href="/photo">Muscle Training</a></li> 
+                                <li><a href="/photo">Yoga Training</a></li> 
+                                <li><a href="/photo">Body Building</a></li> 
+                            </ul> 
+                        </div> 
+                        <div class="footer-col"> 
+                            <h4>Contact Us</h4> 
+                            <ul> 
+                                <li><a><i class="fa fa-phone" aria-hidden="true"></i><p>94780 20036</p></a></li> 
+                                <li><a><i class="fa fa-envelope" aria-hidden="true"></i><p>jyoti20015027@gamil.com</p></a></li> 
+                                 
+                                 
+                            </ul> 
+                        </div> 
+                        <div class="footer-col"> 
+                            <h4>Follow Us</h4> 
+                            <div class="social-links"> 
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+     
+                            </div> 
+                           
+                        </div> 
+                        
+                    </div> 
+                </div> 
+                 
+            </footer> 
+        </body> 
+    </html>
+    

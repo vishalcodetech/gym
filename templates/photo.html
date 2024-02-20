@@ -1,0 +1,367 @@
+{% load static %}
+<!Doctype html>
+<html>
+    <head>
+        
+        <script src="https://kit.fontawesome.com/ccdbd762c2.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-color: grey;
+            }
+            header{
+                display: flex;
+                position: relative;
+                background-color: rgb(77, 67, 74);
+                width: 100%;
+
+            }
+            .left p{
+                margin-top: 20px;
+                margin-left: 100px;
+                font-size: 30px;
+                font-weight: bold;
+                color: aliceblue;
+            }
+            .navbar nav ul{
+                display: flex;
+                margin-left: 400px;
+                margin-top: 40px;
+                list-style: none;
+            }
+          
+            .navbar nav ul li a{
+                list-style-type: none;
+                margin-left: 40px;
+                font-size: 16px;
+                font-weight: bold;
+                color: aliceblue;
+                margin-top: 20px ;
+                
+            }
+            .navbar nav ul li a{
+                text-decoration: none;
+            }
+            .navbar nav ul li a:hover{
+                font-size: 22px;
+                color: rgb(233, 91, 233);
+                text-decoration: underline;
+                
+            }
+            /* .container6{
+                display: flex;
+            } */
+            .container6 h1{
+                margin-top: 20px;
+                margin-left: 600px;
+                font-size: 50px;
+            }
+            .row2{
+                display: inline-block;
+            }
+            .row2 img{
+                width: 300px;
+                height: 300px;
+                margin-left: 150px;
+            }
+            .content p{
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: justify;
+                font-size: 20px;
+            }
+            .content li{
+                margin-left: 100px;
+                font-size: 20px;
+            }
+            #heading{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .footer{
+                background-color: #24262b;
+                padding: 70px 0px;
+                border-radius:  30px 30px 0 0;
+                margin-top: 20px;
+            }
+            .container1{
+                max-width: 1170px;
+                
+                margin: none;
+                margin-left: 150px;
+            }
+            ul{
+                list-style: none;
+            }
+            .row5{
+                display: flex;
+                flex-wrap: wrap;
+            }
+           .footer-col{
+            width: 20%;
+            padding: 0 15px;
+        
+           }
+           .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+            margin-left: 40px;
+           }
+           .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+           }
+           .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+           }
+           .footer-col ul li a{
+            margin-left: 0px;
+           }
+           .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+           }
+           .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 10px;
+           }
+           .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            list-style: none;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.3s ease;
+           }
+           .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+           }
+           
+            
+            
+           
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="left">
+                <p>FIT HIT GYM</p>
+            </div>
+            <div class="right">
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/classes">CLASSES</a></li>
+                            <li><a href="/contact">CONTACT US</a></li>
+                            <li><a href="/about">ABOUT US</a></li>
+                            <li><a href="/account">ACCOUNT</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container6">
+            <h1>Basic Fitness</h1>
+            <div class="row">
+                <div class="row2">
+                    <img src="{% static 'images/fitness.jpeg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/bsft.jpg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/bsft1.jpg' %}">
+
+                </div>
+                
+            </div>
+            <div class="content" >
+                <p>Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles.
+                    There are seven basic movements the human body can perform and all other exercises are merely variations of these seven: Pull, Push, Squat, Lunge, Hinge, Rotation and Gait. When performing all of these movements, you will be able to stimulate all of the major muscle groups in your body.
+                    Health-related fitness involves skills that enable one to become and stay physically healthy. Six Components of Skill-Related Fitness. There are six skill-related fitness components: agility, balance, coordination, speed, power, and reaction time.</p>
+                <p id="heading">Steps</p>
+                <p><li>Cardiovascular Endurance</li>
+                <p><li>Muscular Strength</li></p>
+                <p><li>Muscular Endurance</li></p>
+                <p><li>Flexibility</li></p>
+                <p><li>Body Composition</li></p>
+            </div>
+
+
+        </div>
+        <div class="container6" id="muscleid">
+            <h1>Muscle Training</h1>
+            <div class="row">
+                <div class="row2">
+                    <img src="{% static 'images/musclephoto.jpg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/musclephoto1.webp' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/musclephoto2.webp' %}">
+</div>
+                
+            </div>
+            <div class="content">
+                <p>Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles.
+                    There are seven basic movements the human body can perform and all other exercises are merely variations of these seven: Pull, Push, Squat, Lunge, Hinge, Rotation and Gait. When performing all of these movements, you will be able to stimulate all of the major muscle groups in your body.
+                    Health-related fitness involves skills that enable one to become and stay physically healthy. Six Components of Skill-Related Fitness. There are six skill-related fitness components: agility, balance, coordination, speed, power, and reaction time.
+                    Strength training may enhance your quality of life and improve your ability to do everyday activities. Strength training can also protect your joints from injury. Building muscle also can contribute to better balance and may reduce your risk of falls. This can help you maintain independence as you age.</p>
+                    <p id="heading">Steps</p>
+                <p><li>Warm Up</li>
+                <p><li>Start with lighter Weight</li></p>
+                <p><li>Rest for at least 60 seconds in between sets</li></p>
+                <p><li>Limit your workout to no longer than 45 minutes</li></p>
+                <p><li>Gently stretch your muscles after your workout</li></p>
+                <p><li>Rest a day or two in between workouts</li></p>
+            </div>
+
+
+        </div>
+        <div class="container6" id="yogaid">
+            <h1>Yoga Training</h1>
+            <div class="row">
+                <div class="row2">
+                    <img src="{% static 'images\yoga2.webp' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/yoga4.jpg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/yoga3.jpeg' %}">
+
+                </div>
+                
+            </div>
+            <div class="content">
+                <p>Yoga is definitely a great choice for improving heart health as it is a process of healing from inside. On the other hand, gym training also works on heart health by burning excess calories, but heavy gym training is not recommended for heart patients. Yoga works brilliantly on mental health.
+                    Yoga is best done after a workout or on your rest days. This is because yoga stretches out your muscle fibers and reduces their ability to contract. Contraction is actually what builds muscle, so the weakened body tissues from doing yoga before a workout ultimately reduce your weight training performance.</p>
+                <p id="heading">Steps</p>
+                <p><li>Yama (abstinences)</li>
+                <p><li>Yama (abstinences)</li></p>
+                <p><li>Asana (yoga postures)</li></p>
+                <p><li>Pranayama (breath control)</li></p>
+                <p><li>Pratyahara (withdrawal of the senses)</li></p>
+                <p><li>Dharana (concentration)</li></p>
+                <p><li>Dhyana (meditation)</li></p>
+                <p><li>Samadhi (absorption)</li></p>
+            </div>
+            
+
+
+        </div>
+        <div class="container6" id="bodyid">
+            <h1>Body Building</h1>
+            <div class="row">
+                <div class="row2">
+                    <img src="{% static 'images/body2.jpg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/body.jpg' %}">
+
+                </div>
+                <div class="row2">
+                    <img src="{% static 'images/body3.webp' %}">
+</div>
+                
+            </div>
+            <div class="content">
+                <p>Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles.
+                    There are seven basic movements the human body can perform and all other exercises are merely variations of these seven: Pull, Push, Squat, Lunge, Hinge, Rotation and Gait. When performing all of these movements, you will be able to stimulate all of the major muscle groups in your body.
+                    Health-related fitness involves skills that enable one to become and stay physically healthy. Six Components of Skill-Related Fitness. There are six skill-related fitness components: agility, balance, coordination, speed, power, and reaction time.
+                    Strength training may enhance your quality of life and improve your ability to do everyday activities. Strength training can also protect your joints from injury. Building muscle also can contribute to better balance and may reduce your risk of falls. This can help you maintain independence as you age.</p>
+                    <p id="heading">Steps</p>
+                <p><li>Warm Up</li>
+                <p><li>Start with lighter Weight</li></p>
+                <p><li>Rest for at least 60 seconds in between sets</li></p>
+                <p><li>Limit your workout to no longer than 45 minutes</li></p>
+                <p><li>Gently stretch your muscles after your workout</li></p>
+                <p><li>Rest a day or two in between workouts</li></p>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <div class="container1">
+                <div class="row5">
+                    <div class="footer-col">
+                        <h4>Fit Hit Gym</h4>
+                        <ul>
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/classes">CLASSES</a></li>
+                            <li><a href="/about">ABOUT US</a></li>
+                            <li><a href="/contact">CONTACT US</a></li>
+                            <li><a href="/login">LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>CLASSES</h4>
+                        <ul>
+                            <li><a href="/photo">Basic Fitness</a></li>
+                            <li><a href="#muscleid">Muscle Training</a></li>
+                            <li><a href="#yogaid">Yoga Training</a></li>
+                            <li><a href="#bodyid">Body Building</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a><i class="fa fa-phone" aria-hidden="true"></i><p>94780 20036</p></a></li>
+                            <li><a><i class="fa fa-envelope" aria-hidden="true"></i><p>jyoti20015027@gamil.com</p></a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                        </div>
+                      
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
+
+
